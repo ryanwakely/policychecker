@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <title></title>
+    <meta content="" name="description">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+                padding-top: 50px;
+                padding-bottom: 20px;
+            }
+    </style>
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <div class="container">
+        <div class="col-md-6">
+            <h1>Enter Policy Information Here</h1>
+
+            <form>
+                <!-- switch name and policy number to fix bug -->
+
+                <p>Name:<input id="Name" placeholder="Name" style="width:100%"
+                type="text"></p>
+
+                <p>Policy Number:<input id="PolicyNumber" placeholder=
+                "Policy Number" style="width:100%" type="text"></p>
+
+                <p>Check for Form:<input id="Form1" placeholder="Form Number"
+                style="width:100%" type="text"></p>
+            </form>
+        </div>
+
+        <div class="col-md-6">
+            <h1>Paste Policy Here</h1>
+            <textarea id="Policy" placeholder="Enter Policy Info" style=
+            "width:100%; height:250px">
+</textarea><br>
+            <input class="btn btn-danger" id="tSubmit" onclick=
+            "PolicyChecker();" type="submit" value="Submit">
+        </div>
+
+        <div class="col-md-12">
+            <h1>Match Types</h1>
+
+            <p id="tOutPut" style="color:red;"></p>
+
+            <p id="tNumberOutPut" style="color:red;"></p>
+
+            <p id="tErrorOutPut" style="color:red;"></p>
+        </div>
+    </div><script src="js/plugins.js"></script> <script src="js/main.js"></script> 
+</body>
+</html>
